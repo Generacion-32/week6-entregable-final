@@ -50,7 +50,7 @@ const login = catchError(async (req, res) => {
     process.env.TOKEN_SECRET,
     { expiresIn: "1d" }
   )
-  return res.json({ user, token })
+  return res.json({ user: user, token: token })
 
 })
 
