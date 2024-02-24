@@ -10,6 +10,6 @@ const router = express.Router();
 router.use('/users', routerUser)
 router.use('/categories', routerCategory)
 router.use('/products', routerProduct)
-router.use('/cart', verifyJWT, routerCart)
+router.use('/cart', verifyJWT, routerCart) //🔐🔐🔐🔐💪😊
 
 module.exports = router;
