@@ -43,6 +43,8 @@ const update = catchError(async (req, res) => {
   const userId = req.user.id
   const { id } = req.params;
   const { quantity } = req.body
+
+
   const result = await Cart.update(
     { quantity },
     { where: { id, userId }, returning: true }
