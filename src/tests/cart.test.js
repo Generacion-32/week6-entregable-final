@@ -2,6 +2,7 @@ require('../models')
 const request = require("supertest")
 const app = require("../app")
 const Product = require("../models/Product")
+// const Cart = require('../models/Cart')s
 
 const URL_USER = '/users/login'
 const URL_BASE = '/cart'
@@ -40,7 +41,7 @@ beforeAll(async () => {
     productId: product.id
   }
 
-  Cart.create({ quantity: 1 })
+  // Cart.create({ quantity: 1 })
 
 })
 
